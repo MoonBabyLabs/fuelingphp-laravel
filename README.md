@@ -7,6 +7,42 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# FuelingPHP Laravel Tutorials 
+This repo is used to house many of our tutorials surrounding PHP, Laravel and general tutorials. We use Laravel as our base framework right now as it is well-known and a small learning curve.
+
+## Application Structure
+There is a tutorials namespace within the app: ```app/Tutorials``` broken down by the primary sections inside of FuelingPHP.
+
+### Cloud Ops
+- Location: app/Tutorials/Cloud 
+
+
+### Architecture
+- Location: app/Tutorials/Architecture 
+
+
+### Craftsmanship 
+- Location: app/Tutorials/Craftsmanship
+
+
+
+## How to add content 
+The tutorials should be aligned with the sections and categories within FuelingPHP. 
+
+### Creating a new tutorial 
+1. Determine if you need to create a new subsection (see below if so)
+2. Add a new Controller or action inside of an existing controller if a relevant one exists
+3. Create your logic inside of the action as needed.
+4. Update the routes.php inside of the section you are working.
+
+### Adding New Subsections
+You will come across scenarios where you need to add new subsections from categories. Here are the steps to create a new subsection. 
+1. Create a Namespace folder underneath the parent section. 
+2. Add a routes.php file and Http folder + a controller file (see other sections for examples)
+3. Update the RouteServiceProvider.php file found in  app/RouteServiceProvider.php with the new routes file.
+4. Continue with your tutorial.
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
